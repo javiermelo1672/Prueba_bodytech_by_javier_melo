@@ -1,5 +1,8 @@
 {
   "name": "prueba_body",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }

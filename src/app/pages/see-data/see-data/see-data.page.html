@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="salir()">
+          <ion-icon size="large" name="close-outline"></ion-icon>
+      </ion-button>
+  </ion-buttons>
+    <ion-title>Detalle data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Detalle data</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Id:{{id}},userId:{{userId}}</ion-card-subtitle>
+      <ion-card-title>{{title}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{body}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

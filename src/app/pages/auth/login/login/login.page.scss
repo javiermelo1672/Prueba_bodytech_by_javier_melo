@@ -1,0 +1,35 @@
+.logo {
+    max-width: 130px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+ion-grid {
+    height: 100%;
+}
+
+ion-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.passwordIcon{
+    font-size:1.5rem !important;
+    position: relative !important;
+    top: 22px !important;
+    margin: 0 auto !important;
+ }
+
+ .title{
+    font-size: 1.4em;
+}
+.input{
+    font-size: 1.2em;
+}
+
+.buton{
+    font-size: 1.1em;
+}

@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content class="ion-padding">
+    <ion-grid>
+        <ion-row class="ion-justify-content-center">
+            <ion-col>
+                <ion-img src="/assets/icon/logo.png" class="logo"></ion-img>
+                <br>
+                <div class="ion-text-center">
+                    <ion-card-title>¡Regístrese en dos simples pasos!</ion-card-title>
+                </div>
+                <br>
+                <form #login_form="ngForm" (ngSubmit)="login()">
+                    <ion-card>
+                        <ion-item>
+                            <ion-label class="title" position="stacked">Correo:</ion-label>
+                            <ion-input required inputmode="email" type="email" class="input" placeholder="Ingrese su email" [(ngModel)]="email" name="user"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label class="title"position="stacked">Contraseña:</ion-label>
+                            <ion-input required class="input" type="password" placeholder="Ingrese su contraseña" [(ngModel)]="password" name="password"></ion-input>
+                          
+                        </ion-item>
+                        <br>
+                        <ion-button [disabled]="login_form.invalid" class="buton" type="submit" expand="block">Registrarse</ion-button>
+                    </ion-card>
+                </form>
+                <ion-row style="padding:10px">
+                  <ion-col style="text-align: center;">
+                      <h4><a style="color:#3880ff"   >Al registrarse acepta los términos y condiciones de Javier Melo</a></h4>
+                  </ion-col>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+  </ion-content>
+  <ion-footer class="ion-no-border ion-text-center">
+    <p style="color:#e7effc" class="ion-text-center"><a style="color:#3880ff">0.0.1</a></p>
+    <div style="height: 5px; width: 100%; background-color: #3880ff;"></div>
+  </ion-footer>
+
+</ion-content>
